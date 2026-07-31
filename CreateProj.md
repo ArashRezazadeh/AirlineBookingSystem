@@ -104,3 +104,20 @@ dotnet add Services/Notification/Notification.Core/Notification.Core.csproj refe
 mkdir Services\Flight\Flight.Core\Entities; mkdir Services\Booking\Booking.Core\Entities; mkdir Services\Payment\Payment.Core\Entities; mkdir Services\Notification\Notification.Core\Entities
 
 mkdir Services\Flight\Flight.Core\Repositories; mkdir Services\Booking\Booking.Core\Repositories; mkdir Services\Payment\Payment.Core\Repositories; mkdir Services\Notification\Notification.Core\Repositories
+
+mkdir Services\Flight\Flight.Infrastructure\Repositories; mkdir Services\Booking\Booking.Infrastructure\Repositories; mkdir Services\Payment\Payment.Infrastructure\Repositories; mkdir Services\Notification\Notification.Infrastructure\Repositories
+
+
+# Install Dapper for all
+dotnet add Services\Flight\Flight.Infrastructure\Flight.Infrastructure.csproj package Dapper; dotnet add Services\Flight\Flight.Infrastructure\Flight.Infrastructure.csproj package Microsoft.Data.SqlClient; dotnet add Services\Booking\Booking.Infrastructure\Booking.Infrastructure.csproj package Dapper; dotnet add Services\Booking\Booking.Infrastructure\Booking.Infrastructure.csproj package Microsoft.Data.SqlClient; dotnet add Services\Payment\Payment.Infrastructure\Payment.Infrastructure.csproj package Dapper; dotnet add Services\Payment\Payment.Infrastructure\Payment.Infrastructure.csproj package Microsoft.Data.SqlClient; dotnet add Services\Notification\Notification.Infrastructure\Notification.Infrastructure.csproj package Dapper; dotnet add Services\Notification\Notification.Infrastructure\Notification.Infrastructure.csproj package Microsoft.Data.SqlClient
+
+
+# Create Command, Queries and Handlers folders
+mkdir Services\Flight\Flight.Application\Commands; mkdir Services\Flight\Flight.Application\Handlers; mkdir Services\Flight\Flight.Application\Queries; mkdir Services\Booking\Booking.Application\Commands; mkdir Services\Booking\Booking.Application\Handlers; mkdir Services\Booking\Booking.Application\Queries; mkdir Services\Payment\Payment.Application\Commands; mkdir Services\Payment\Payment.Application\Handlers; mkdir Services\Payment\Payment.Application\Queries; mkdir Services\Notification\Notification.Application\Commands; mkdir Services\Notification\Notification.Application\Handlers; mkdir Services\Notification\Notification.Application\Queries 
+
+
+# Install MediateR for all Application Layers 
+dotnet add Services\Flight\Flight.Application\Flight.Application.csproj package MediatR; dotnet add Services\Booking\Booking.Application\Booking.Application.csproj package MediatR; dotnet add Services\Payment\Payment.Application\Payment.Application.csproj package MediatR; dotnet add Services\Notification\Notification.Application\Notification.Application.csproj package MediatR
+
+# Install MediateR for all Api Layers 
+dotnet add Services\Flight\Flight.Api\Flight.Api.csproj package MediatR; dotnet add Services\Booking\Booking.Api\Booking.Api.csproj package MediatR; dotnet add Services\Payment\Payment.Api\Payment.Api.csproj package MediatR; dotnet add Services\Notification\Notification.Api\Notification.Api.csproj package MediatR
