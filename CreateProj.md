@@ -121,3 +121,10 @@ dotnet add Services\Flight\Flight.Application\Flight.Application.csproj package 
 
 # Install MediateR for all Api Layers 
 dotnet add Services\Flight\Flight.Api\Flight.Api.csproj package MediatR; dotnet add Services\Booking\Booking.Api\Booking.Api.csproj package MediatR; dotnet add Services\Payment\Payment.Api\Payment.Api.csproj package MediatR; dotnet add Services\Notification\Notification.Api\Notification.Api.csproj package MediatR
+
+
+# Update references from all services to point to new BuildingBlocks project
+dotnet add Services\Flight\Flight.Core\Flight.Core.csproj reference BuildingBlocks\BuildingBlocks.csproj
+dotnet add Services\Booking\Booking.Core\Booking.Core.csproj reference BuildingBlocks\BuildingBlocks.csproj
+dotnet add Services\Payment\Payment.Core\Payment.Core.csproj reference BuildingBlocks\BuildingBlocks.csproj
+dotnet add Services\Notification\Notification.Core\Notification.Core.csproj reference BuildingBlocks\BuildingBlocks.csproj

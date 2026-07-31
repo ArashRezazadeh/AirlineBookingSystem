@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Core", "Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Infrastructure", "Services\Payment\Payment.Infrastructure\Payment.Infrastructure.csproj", "{3DAFF04E-F614-4107-A66D-E9C9128D197A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{EF3DD21D-6701-482B-9930-6D5E73115E21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +235,18 @@ Global
 		{3DAFF04E-F614-4107-A66D-E9C9128D197A}.Release|x64.Build.0 = Release|Any CPU
 		{3DAFF04E-F614-4107-A66D-E9C9128D197A}.Release|x86.ActiveCfg = Release|Any CPU
 		{3DAFF04E-F614-4107-A66D-E9C9128D197A}.Release|x86.Build.0 = Release|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Debug|x64.Build.0 = Debug|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Debug|x86.Build.0 = Debug|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Release|x64.ActiveCfg = Release|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Release|x64.Build.0 = Release|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF3DD21D-6701-482B-9930-6D5E73115E21}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
