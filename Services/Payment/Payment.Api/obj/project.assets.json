@@ -1,0 +1,209 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Microsoft.AspNetCore.OpenApi/9.0.18": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Payment.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Payment.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Payment.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Application.dll": {}
+        }
+      },
+      "Payment.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Payment.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Core.dll": {}
+        }
+      },
+      "Payment.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Payment.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Payment.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.OpenApi/9.0.18": {
+      "sha512": "zL+MUFNrqVtnoYa/21c8Nq67Xcj569NLhjah8nhKubxA8s1zkhjhA+CzXIBwpjHWYKZ4JNH029S2RJvBotsQqQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.18.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "Payment.Application/1.0.0": {
+      "type": "project",
+      "path": "../Payment.Application/Payment.Application.csproj",
+      "msbuildProject": "../Payment.Application/Payment.Application.csproj"
+    },
+    "Payment.Core/1.0.0": {
+      "type": "project",
+      "path": "../Payment.Core/Payment.Core.csproj",
+      "msbuildProject": "../Payment.Core/Payment.Core.csproj"
+    },
+    "Payment.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Payment.Infrastructure/Payment.Infrastructure.csproj",
+      "msbuildProject": "../Payment.Infrastructure/Payment.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Microsoft.AspNetCore.OpenApi >= 9.0.18",
+      "Payment.Application >= 1.0.0",
+      "Payment.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Adrian\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Projects\\AirlineBookingSystem\\Services\\Payment\\Payment.Api\\Payment.Api.csproj",
+      "projectName": "Payment.Api",
+      "projectPath": "D:\\Projects\\AirlineBookingSystem\\Services\\Payment\\Payment.Api\\Payment.Api.csproj",
+      "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\AirlineBookingSystem\\Services\\Payment\\Payment.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Adrian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "D:\\Projects\\AirlineBookingSystem\\Services\\Payment\\Payment.Application\\Payment.Application.csproj": {
+              "projectPath": "D:\\Projects\\AirlineBookingSystem\\Services\\Payment\\Payment.Application\\Payment.Application.csproj"
+            },
+            "D:\\Projects\\AirlineBookingSystem\\Services\\Payment\\Payment.Infrastructure\\Payment.Infrastructure.csproj": {
+              "projectPath": "D:\\Projects\\AirlineBookingSystem\\Services\\Payment\\Payment.Infrastructure\\Payment.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[9.0.18, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.316/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

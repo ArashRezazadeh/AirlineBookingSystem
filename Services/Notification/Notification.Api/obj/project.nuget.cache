@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1wDR3eWnFOc=",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\AirlineBookingSystem\\Services\\Notification\\Notification.Api\\Notification.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.18\\microsoft.aspnetcore.openapi.9.0.18.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
