@@ -30,5 +30,4 @@ public class BookingController : ControllerBase
         var result = await _mediator.Send(command);
         return CreatedAtAction(nameof(GetById), new { id = result }, result);
     }
-
 }

@@ -5,4 +5,5 @@ namespace Payment.Application.Commands;
 
 public record ProcessPaymentCommand(
     Guid BookingId,
-    decimal Amount) : IRequest<Guid>; 
+    decimal Amount
+) : IRequest<Guid>; 

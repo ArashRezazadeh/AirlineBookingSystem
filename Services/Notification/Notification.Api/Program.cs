@@ -6,6 +6,9 @@ using Notification.Core.Services;
 using Notification.Infrastructure.Services;
 using System.Reflection;
 using Notification.Application.Handlers;
+using MassTransit;
+using Notification.Application.Consumers;
+using BuildingBlocks.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +20,26 @@ builder.Services.AddScoped<IDbConnection>(sp =>
     new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<INotificationService,NotificationService>();
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<PaymentProcessedConsumer>();
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        var rabbitMqConfig = builder.Configuration.GetSection("RabbitMQ");
+        cfg.Host(rabbitMqConfig["Host"], "/", h =>
+        {
+            h.Username(rabbitMqConfig["Username"]);
+            h.Password(rabbitMqConfig["Password"]);
+        });
+
+        cfg.ReceiveEndpoint(EventBusConstants.PaymentProcessedQueue, e =>
+        {
+            e.ConfigureConsumer<PaymentProcessedConsumer>(context);
+        });
+    });
+});
 
 
 var assemblies = new Assembly[]

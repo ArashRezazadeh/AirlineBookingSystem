@@ -128,3 +128,10 @@ dotnet add Services\Flight\Flight.Core\Flight.Core.csproj reference BuildingBloc
 dotnet add Services\Booking\Booking.Core\Booking.Core.csproj reference BuildingBlocks\BuildingBlocks.csproj
 dotnet add Services\Payment\Payment.Core\Payment.Core.csproj reference BuildingBlocks\BuildingBlocks.csproj
 dotnet add Services\Notification\Notification.Core\Notification.Core.csproj reference BuildingBlocks\BuildingBlocks.csproj
+
+# Add MassTransit to all projects 
+dotnet add Services\Flight\Flight.Api\Flight.Api.csproj package MassTransit; dotnet add Services\Flight\Flight.Api\Flight.Api.csproj package MassTransit.RabbitMQ; dotnet add Services\Booking\Booking.Api\Booking.Api.csproj package MassTransit; dotnet add Services\Booking\Booking.Api\Booking.Api.csproj package MassTransit.RabbitMQ; dotnet add Services\Payment\Payment.Api\Payment.Api.csproj package MassTransit; dotnet add Services\Payment\Payment.Api\Payment.Api.csproj package MassTransit.RabbitMQ; dotnet add Services\Notification\Notification.Api\Notification.Api.csproj package MassTransit; dotnet add Services\Notification\Notification.Api\Notification.Api.csproj package MassTransit.RabbitMQ
+
+dotnet add Services\Payment\Payment.Application\Payment.Application.csproj package MassTransit; dotnet add Services\Payment\Payment.Application\Payment.Application.csproj package MassTransit.RabbitMQ;
+
+dotnet add Services\Notification\Notification.Application\Notification.Application.csproj package MassTransit; dotnet add Services\Notification\Notification.Application\Notification.Application.csproj package MassTransit.RabbitMQ
